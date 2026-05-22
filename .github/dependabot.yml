@@ -11,3 +11,23 @@ updates:
       github-actions:
         patterns:
           - "*"
+
+  - package-ecosystem: pip
+    directory: /docs/mkdocs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /tools/astyle
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /tools/generate_natvis
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /tools/serve_header
+    schedule:
+      interval: daily
